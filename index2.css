@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+
+}
+::-webkit-scrollbar{
+    background-color: #ccc;
+
+}
+body{
+    background-color: #eeeaea;
+}
+section{
+    margin-top: 50px;
+}
+header{
+    background-color: #fffbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+header .logo a{
+    font-size: 25px;
+    color: #754194;
+   
+
+}
+header .logo a span{
+    color: #692a69;
+}
+.title{
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: rgb(109, 78, 173);
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.title::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+menu li a{
+    color: #fff;
+    font-size: 14px;
+}
+a{
+    text-decoration: 0;
+    font-size: medium;
+}
+.btn-reservation{
+    color: rgb(209, 141, 234);
+    font-size: 14px;
+    border: 2px solid rgb(209, 141, 234);
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.btn-reservation:hover{
+    background-color: #804dd6;
+    color: #fff;
+    
+}
+* {box-sizing:border-box}
+#popular-destination{
+    margin-top: 100px;
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.content1  {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.content2  {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30%;
+    
+}
+
+.content1 h2{
+    margin-top: -30%;
+}
+.content2 h2{
+    margin-top: -30%;
+}
+.card img{
+    height: 38vh;
+    width: 28vw;
+    border-radius: 3px;
+    margin: 0vh 5vh;
+    margin-top: -200px;
+    box-shadow: 4px 5px 15px black ;
+    /*transition: transform .5%;*/
+}
+.image:hover{
+    transform: translateY(-50px)
+}
+.inbox{
+    height: 25vh;
+    width: 25vw;
+    padding-left: 35%;
+    /*text-shadow: 3px 2px 5px black;*/
+    color: rgb(133, 77, 166);
+   
+    margin: 5vh;
+    position:static;
+    top: 5vh;
+    z-index: -1;
+   /* transition: transform .5%;*/
+}
+/*.card:hover .index{
+    transform: translateY(50px);
+}*/
+
+
+
+
+
+
+
+
+
+
+

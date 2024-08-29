@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
+
+}
+::-webkit-scrollbar{
+    background-color: #eeeaea;
+
+}
+body{
+    background-color: #eeeaea;
+}
+section{
+    margin-top: 50px;
+}
+header{
+    background-color: #f7f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+header .logo a{
+    font-size: 25px;
+    color: #754194;
+   
+
+}
+header .logo a span{
+    color: #692a69;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    
+}
+.menu li{
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+menu li a{
+    color: #fff;
+    font-size: 14px;
+}
+a{
+    text-decoration: 0;
+    font-size: medium;
+}
+.btn-reservation{
+    color: rgb(209, 141, 234);
+    font-size: 14px;
+    border: 2px solid rgb(209, 141, 234);
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+.btn-reservation:hover{
+    background-color: #804dd6;
+    color: #eeeaea;
+    
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 5%;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+#a-propos{
+    margin-top: 100px;
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.title{
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: rgb(109, 78, 173);
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.title::after{
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.img-desc .left{
+    position: relative;
+    margin-left: 10px;
+    height: 100px;
+    width: 20%;
+    margin-left: 10%;
+    /*height: 38vh;
+    width: 28vw;*/
+    border-radius: 3px;
+    margin: 0vh 5vh;
+    margin-top: -75px;
+    box-shadow: 4px 5px 15px black ;
+}
+.img-desc .left image{
+    width: 50%;
+    height: 50%;
+    font-size: small;
+    position: relative;
+    box-shadow: 0 0 10px rgba(133, 87, 219, 0.537);
+}
+.img-desc .right h3{
+    color: #827aa8;
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+.img-desc .right a{
+    border: 1px solid rgb(209, 141, 234);
+    color: rgb(209, 141, 234);
+    font-size: 14px;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+/* STEPS */
+#steps ul {
+    
+   font-size: 20px;
+   padding-left: 20%;
+}
+
+#steps ul li {
+    width: 300px;
+    float: left;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+}
+
+#steps h4 {
+    text-transform: uppercase;
+    color: #754194;
+    margin-top: -20%;
+   
+}
+
+#steps p {
+    margin-bottom: 20px;
+    color: #5e446d;
+    margin-top: 10%;
+}
+
+/*#step-1 {
+    background: url(images/steps-icon-1.png) no-repeat top center;
+
+}
+
+#step-2 {
+    background: url(images/steps-icon-2.png) no-repeat top center;
+}
+
+
