@@ -215,14 +215,312 @@ ul {
     color: #5e446d;
     margin-top: 10%;
 }
+/*responsive*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
 
-/*#step-1 {
-    background: url(images/steps-icon-1.png) no-repeat top center;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-#step-2 {
-    background: url(images/steps-icon-2.png) no-repeat top center;
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9px;
 }
+
+::-webkit-scrollbar {
+    background-color: #eeeaea;
+}
+
+body {
+    background-color: #eeeaea;
+}
+
+section {
+    margin-top: 50px;
+}
+
+header {
+    background-color: #f7f5f5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+header .logo a {
+    font-size: 2.5rem; /* Use rem for responsive font sizes */
+    color: #754194;
+}
+
+header .logo a span {
+    color: #692a69;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 1.5rem; /* Use rem for spacing */
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #a24eb8;
+    font-size: 1.4rem; /* Use rem for font sizes */
+}
+
+a {
+    text-decoration: none;
+    font-size: medium;
+}
+
+.btn-reservation {
+    color: rgb(209, 141, 234);
+    font-size: 1.4rem;
+    border: 2px solid rgb(209, 141, 234);
+    padding: 0.5rem 2rem;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.btn-reservation:hover {
+    background-color: #804dd6;
+    color: #eeeaea;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#a-propos {
+    margin-top: 100px;
+    padding: 0 10%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: rgb(109, 78, 173);
+    position: relative;
+    margin-left: 15px;
+    font-size: 1.8rem;
+}
+
+.title::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img-desc .left {
+    position: relative;
+    height: 10rem;
+    width: 20%;
+    border-radius: 3px;
+    box-shadow: 4px 5px 15px black;
+}
+
+.img-desc .left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(133, 87, 219, 0.537);
+}
+
+.img-desc .right h3 {
+    color: #827aa8;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.img-desc .right a {
+    border: 1px solid rgb(209, 141, 234);
+    color: rgb(209, 141, 234);
+    font-size: 1.4rem;
+    padding: 0 2.5rem;
+    font-weight: bold;
+}
+
+/* STEPS */
+#steps ul {
+    font-size: 2rem;
+    padding-left: 20%;
+}
+
+#steps ul li {
+    width: 30rem;
+    float: left;
+    padding-top: 14rem;
+    text-align: center;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#steps h4 {
+    text-transform: uppercase;
+    color: #754194;
+    margin-top: -20%;
+}
+
+#steps p {
+    margin-bottom: 20px;
+    color: #5e446d;
+    margin-top: 10%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    header {
+        padding: 0 2%;
+    }
+    .menu li a {
+        font-size: 1.2rem;
+    }
+    .btn-reservation {
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .img-desc .left {
+        width: 30%;
+    }
+    #steps ul {
+        padding-left: 10%;
+    }
+    #steps ul li {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 5%;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+    .slideshow-container {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .img-desc {
+        flex-direction: column;
+    }
+    .img-desc .left {
+        width: 80%;
+    }
+    #steps ul {
+        padding-left: 5%;
+    }
+    #steps ul li {
+        width: 20rem;
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    header .logo a {
+        font-size: 2rem;
+    }
+    .btn-reservation {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .img-desc .left {
+        width: 100%;
+    }
+    #steps ul li {
+        width: 15rem;
+    }
+}
+
+
+
+
+
+
 
 
